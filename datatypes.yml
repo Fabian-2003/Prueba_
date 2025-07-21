@@ -1,0 +1,45 @@
+#String variables
+name: Fabian Picado
+fruit: "apple"
+job: 'SysAdmin'
+---
+bio: |
+My name is Fabian.
+I am a System Administrator
+---
+#write a single line in multiple lines
+message: >
+this will
+all be
+in one single line
+---
+#same as
+message: !!str this will all be in one single line
+
+number: 5473
+marks: 98.76
+booleanValue: !!bool No # n, N, false, False, false
+#same fot the true -> yes, y, yes
+
+#specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalnum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 # 540,000
+exponential numbers: 6.02BE56
+
+#floating points numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a number: .nan
+
+## null
+surname: !!null Null #or null null
+~: this is a null key
+
+#dates and time
+date: 2025-07-21
+costa rica time: 2025-07-21T12:09:55.10

@@ -1,0 +1,62 @@
+student: !!seq
+- marks
+- name
+-roll_no
+
+#like this also
+cities: [Cartago, Guanacaste]
+
+#some of the keys of the seq will be empty
+#sparse sequence
+sparse seq:
+- hey
+- how
+-
+- Null
+- date
+
+# key: value pairs are called maps
+!!map
+
+#nested mappings: map within an map
+name: Fabian Picado
+role: Sysadmin
+age: 22
+job: System Administrator
+
+#pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+- job: student
+- job: teacher
+
+#this will be an array of hashtables
+
+# !!set will allow you to have unique values
+names: !!set
+? Fabian
+? Apoorv
+? Rahul
+
+#dictionary !!omap
+People: !!omap
+    -Fabian:
+      name: Fabian Picado
+      age: 22
+      height: 60.0
+    -Esteban:
+      name: Esteban Ramirez
+      age: 29
+      height: 72.8
+      
+#reusing some properties
+Antonio:
+    fav fruit: apple
+    dislikes: liver
+    
+person1:
+    name: Fabian Josue
+    fav fruit: green grapes
+    dislikes: liver
+    
