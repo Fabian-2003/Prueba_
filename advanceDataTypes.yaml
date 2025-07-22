@@ -51,7 +51,7 @@ People: !!omap
       height: 72.8
       
 #reusing some properties
-Antonio:
+likings: &likes
     fav fruit: apple
     dislikes: liver
     
@@ -60,3 +60,11 @@ person1:
     fav fruit: green grapes
     dislikes: liver
     
+person2:
+    name: Pedro Tijeras
+    fav fruit: pinneaple
+    dislikes: liver
+    
+person1:
+    name: Antonio Cardenaz
+    <<: *likes
